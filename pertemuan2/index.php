@@ -35,10 +35,10 @@ Mempelajari mengenai sintaks PHP
 
                 //  Operator
                 //  aritmatika
-                    //  + - * / %
-                    //  $x = 10;
-                    //  $y = 20;
-                    //  echo $x * $y;
+                //      + - * / %
+                //      $x = 10;
+                //      $y = 20;
+                //      echo $x * $y;
 
 //  penggabung string / concatenation / concat
 //  .
