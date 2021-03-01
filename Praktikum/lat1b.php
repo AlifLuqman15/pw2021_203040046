@@ -23,15 +23,15 @@
 
 
         </tr>
-        <!-- Tambahkan baris kode php untuk menampilkan bagian Body Table -->
+        <!-- Tambahkan Baris Kode PHP Untuk Menampilkan Body Table -->
         <?php for ($i=1; $i<=5; $i++) : ?>
         <tr>
             <th>Baris <?= $i; ?></th>
             <?php for ($z=1; $z<=5; $z++) : ?>
-                <td>Baris <?= $x ?>, Kolom <?= $z; ?></td>
+                <td>Baris <?= $i ?>, Kolom <?= $z; ?></td>
             <?php endfor; ?>
         </tr>
         <?php endfor; ?>
     </table>
-    </body>
+</body>
 </html>
