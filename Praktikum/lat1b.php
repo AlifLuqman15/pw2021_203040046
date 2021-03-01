@@ -17,16 +17,16 @@
     <table border="1" cellspacing="0" cellpadding="10">
         <tr>
             <th></th>
-            <?php for ($x=1; $x<=5; $x++) : ?>
-                <th>Kolom <?= $x; ?></th>
+            <?php for ($i=1; $i<=5; $i++) : ?>
+                <th>Kolom <?= $i; ?></th>
             <?php endfor; ?>
 
 
         </tr>
         <!-- Tambahkan baris kode php untuk menampilkan bagian Body Table -->
-        <?php for ($x=1; $x<=5; $x++) : ?>
+        <?php for ($i=1; $i<=5; $i++) : ?>
         <tr>
-            <th>Baris <?= $x; ?></th>
+            <th>Baris <?= $i; ?></th>
             <?php for ($z=1; $z<=5; $z++) : ?>
                 <td>Baris <?= $x ?>, Kolom <?= $z; ?></td>
             <?php endfor; ?>
