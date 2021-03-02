@@ -3,6 +3,7 @@
     // 203040046
     // https://github.com/AlifLuqman15/pw2021_203040046
     // Tugas Praktikum PW
+    // Jumat 10.00-11.00
 ?>
 
 <!DOCTYPE html>
@@ -17,21 +18,21 @@
     <table border="1" cellspacing="0" cellpadding="10">
         <tr>
             <th></th>
-            <?php for ($x=1; $x<=5; $x++) : ?>
-                <th>Kolom <?= $x; ?></th>
+            <?php for ($i=1; $i<=5; $i++) : ?>
+                <th>Kolom <?= $i; ?></th>
             <?php endfor; ?>
 
 
         </tr>
-        <!-- Tambahkan baris kode php untuk menampilkan bagian Body Table -->
-        <?php for ($x=1; $x<=5; $x++) : ?>
+        <!-- Tambahkan Baris Kode PHP Untuk Menampilkan Body Table -->
+        <?php for ($i=1; $i<=5; $i++) : ?>
         <tr>
-            <th>Baris <?= $x; ?></th>
+            <th>Baris <?= $i; ?></th>
             <?php for ($z=1; $z<=5; $z++) : ?>
-                <td>Baris <?= $x ?>, Kolom <?= $z; ?></td>
+                <td>Baris <?= $i ?>, Kolom <?= $z; ?></td>
             <?php endfor; ?>
         </tr>
         <?php endfor; ?>
     </table>
-    </body>
+</body>
 </html>
