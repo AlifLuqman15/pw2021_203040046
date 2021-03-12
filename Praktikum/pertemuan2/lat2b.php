@@ -7,8 +7,8 @@
 ?>
 
 <?php 
-    $jawabanIsset = "Fungsi isset () digunakan untuk memeriksa apakah suatu variabel sudah diatur atau belum.<br><br>";
-    $jawabanEmpty = "Fungsi empty() merupakan fungsi yang digunakan untuk untuk mengecek data atau variabel yang kosong.";
+    $jawabanIsset = "isset adalah fungsi yang digunakan untuk memeriksa apakah suatu variabel sudah diatur atau belum.<br><br>";
+    $jawabanEmpty = "empty adalah fungsi yang digunakan untuk untuk mengecek data atau variabel yang kosong.";
     //Sumber : https://hot.liputan6.com/read/4061894/fungsi-isset-pada-php-untuk-pemrograman-penting-dalam-coding#:~:text=Fungsi%20isset%20pada%20PHP%20adalah%20Fungsi%20isset%20()%20digunakan%20untuk,variabel%20pengujian%20berisi%20nilai%20NULL./
     //Sumber : http://belajarmembikinwebsite.blogspot.com/2013/11/fungsi-empty-dan-trim-pada-php.html
 
