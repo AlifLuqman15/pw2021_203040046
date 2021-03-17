@@ -7,12 +7,12 @@
 ?>
 
 <?php 
-$kalimat = [
+$alif = [
     "ada",
     "abel",
     "men",
     "pung",
     "nilai"
 ];
-echo "Array $kalimat[0]lah suatu vari$kalimat[1] yang dapat $kalimat[2]am$kalimat[3] banyak $kalimat[4]";
+echo "Array $alif[0]lah suatu vari$alif[1] yang dapat $alif[2]am$alif[3] banyak $alif[4]";
 ?>
