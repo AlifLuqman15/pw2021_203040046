@@ -4,6 +4,8 @@
     // https://github.com/AlifLuqman15/pw2021_203040046
     // Tugas Praktikum PW
     // Jumat 10.00-11.00
+    // Merubah Field Nama Barang menjadi Nama Alasannya agar mempermudah ketika memanggil di codingan Tanggal 11 April 2021
+    // Merubah Field No menjadi Id Alasannya agar mempermudah kodingan karena tadi error terus Tanggal 12 April 2021
 ?>
 
 <?php 
@@ -20,7 +22,7 @@ $id = $_GET['id_brg'];
 
 
 //melakukan query dengan parameter id yang diambil dari url
-$brg = query("SELECT * FROM barang WHERE No = $id")[0];
+$brg = query("SELECT * FROM barang WHERE Id = $id")[0];
 
 ?>
 
@@ -43,7 +45,7 @@ $brg = query("SELECT * FROM barang WHERE No = $id")[0];
     <img src="../assets/imgg/<?= $brg["Gambar"]; ?>" alt="">
     </div>
     <div class="keterangan">
-    <p><?= $brg["Nama Barang"]; ?></p>
+    <p><?= $brg["Nama"]; ?></p>
     <p><?= $brg["Deskripsi"]; ?></p>
     <p><?= $brg["Size"]; ?></p>
     <p><?= $brg["Harga"]; ?></p>
