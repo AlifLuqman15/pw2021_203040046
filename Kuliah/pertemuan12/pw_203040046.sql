@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Apr 2021 pada 12.03
+-- Waktu pembuatan: 30 Apr 2021 pada 15.10
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 8.0.1
 
@@ -42,9 +42,29 @@ CREATE TABLE `mahasiswa` (
 
 INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALUES
 (1, 'Alif Luqman Hakim', '203040046', 'aliflhh@gmail.com', 'Teknik Informatika', 'alif.jpg'),
-(2, 'Bimo Resnu Murti Zuhri', '203040026', 'bimogt@gmail.com', 'Teknik Informatika', 'bimo.jpg'),
-(3, 'Dimas Prayudha', '203040120', 'dimaspray@gmail.com', 'Teknik Informatika', 'dimas.jpg'),
-(4, 'Ibnu Rusdianto', '203040047', 'ibnurus@gmail.com', 'Teknik Informatika', 'ibnu.jpg');
+(2, 'Bimo Resnu', '203040026', 'bimogt@gmail.com', 'Teknik Informatika', 'bimo.jpg'),
+(3, 'Dimas', '203040120', 'dimaspray@gmail.com', 'Teknik Informatika', 'dimas.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(3, 'luqman', '$2y$10$5gMgrfRkdp5bpQLeK6j3yuyoVkKnHKCxzL4N.IpdVA3Uxv7wuyvsW'),
+(4, 'admin', '$2y$10$fH0FnEUMn08hHMWpfv/5rO3feKMQzR8Zykb/ynIPkcteYdRwwXX2m'),
+(5, 'hakim', '$2y$10$n/XvXOVS5xGOqKS60QfYGein0EiJIpKm0d/3b3IdOKMaAW6ZEgK3u');
 
 --
 -- Indexes for dumped tables
@@ -57,6 +77,12 @@ ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -64,7 +90,13 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT untuk tabel `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
