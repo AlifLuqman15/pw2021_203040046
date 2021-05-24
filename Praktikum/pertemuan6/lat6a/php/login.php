@@ -1,9 +1,9 @@
-<?php 
-    // Alif Luqman Hakim
-    // 203040046
-    // https://github.com/AlifLuqman15/pw2021_203040046
-    // Tugas Praktikum PW
-    // Jumat 10.00-11.00
+<?php
+// Alif Luqman Hakim
+// 203040046
+// https://github.com/AlifLuqman15/pw2021_203040046
+// Tugas Praktikum PW
+// Jumat 10.00-11.00
 ?>
 
 <?php
@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
             header("Location: admin.php");
             die;
         }
-        header("Location: ../indeks.php");
+        header("Location: ../index.php");
     }
     $error = true;
 }
@@ -38,58 +38,62 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-        <!-- css style -->
-        <link rel="stylesheet" href="css/huh.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- css style -->
+    <link rel="stylesheet" href="css/huh.css">
     <title>Axell Store</title>
-    <style> 
+    <style>
         body {
             background-color: rgb(37, 48, 48);
             color: azure;
         }
+
         h3 {
             text-align: center;
         }
     </style>
 </head>
+
 <body>
-<h3>Axell Store</h3>
-<script type="text/javascript" src="../js/materialize.min.js"></script>
+    <h3>Axell Store</h3>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
     <div class="container">
 
-    <form action="" method="post">
-        <?php if(isset($error)) : ?>
-            <p style="color: red; font-style: italic;">Username atau password salah</p>
-        <?php endif; ?>
-        <div class="card-panel ">
-            <tr>
-                <td><label for="username">Username</label></td>
-                <td>:</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password</label></td>
-                <td>:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
+        <form action="" method="post">
+            <?php if (isset($error)) : ?>
+                <p style="color: red; font-style: italic;">Username atau password salah</p>
+            <?php endif; ?>
+            <div class="card-panel ">
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
             </div>
-    <div class="remember">
-        <label>
-            <label for="remember"></label>
-            <input type="checkbox" name="remember">
-            <span>Remember Me</span>
-        </label>
-        <br><br>
-    </div>
-    <button type="submit" name="submit" class="waves-effect waves-light btn-small blue darken-2">Login</button>
-    </form>
+            <div class="remember">
+                <label>
+                    <label for="remember"></label>
+                    <input type="checkbox" name="remember">
+                    <span>Remember Me</span>
+                </label>
+                <br><br>
+            </div>
+            <button type="submit" name="submit" class="waves-effect waves-light btn-small blue darken-2">Login</button>
+        </form>
 
     </div>
 </body>
+
 </html>
