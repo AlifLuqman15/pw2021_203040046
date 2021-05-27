@@ -1,0 +1,141 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section{
+  padding: 15px 0;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100 px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .container  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer .container .sec {
+  margin-right: 30px;
+}
+
+.footer .container .sec.aboutus {
+  width: 40%;
+}
+
+.footer .container h3 {
+  position: relative;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.footer .container h3::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: black;
+}
+
+.footer p {
+  color: black;
+}
+
+.sci {
+  margin-top: 20px;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sci li a:hover {
+  background-color: rgb(71, 113, 158);
+}
+
+.sci li a .fab {
+  font-size: 20px;
+}
+
+.quickLinks {
+  position: relative;
+  margin-left: -25px;
+}
+
+.quickLinks ul li {
+  list-style: none;
+}
+
+.quickLinks ul li a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+
+}
+
+.quickLinks ul li a:hover {
+  color: black;
+}
+
+.contact1 .info {
+  position: relative;
+}
+
+.contact1 .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.contact1 .info li span:nth-child(1) {
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact1 .info li span {
+  color: black;
+}
+
+.contact1 .info li a {
+  color: black;
+}
+
+.contact1 .info li a:hover {
+  color: black;
+}
+
+.copy {
+  width: 100%;
+  background-color: rgb(26, 45, 78);
+  padding: 8px 100px;
+  text-align: center;
+  color:white;
+}
