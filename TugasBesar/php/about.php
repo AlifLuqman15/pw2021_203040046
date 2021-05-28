@@ -1,4 +1,11 @@
 <?php
+/*
+Alif Luqman Hakim
+203040046
+Shift Jumat 10.00 - 11.00
+Informatika-B
+*/
+
 require 'functions.php';
 $barang = query("SELECT * FROM barang");
 

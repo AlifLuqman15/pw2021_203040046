@@ -1,12 +1,11 @@
 <?php
-// Alif Luqman Hakim
-// 203040046
-// https://github.com/AlifLuqman15/pw2021_203040046
-// Tugas Praktikum PW
-// Jumat 10.00-11.00
-?>
+/*
+Alif Luqman Hakim
+203040046
+Shift Jumat 10.00 - 11.00
+Informatika-B
+*/
 
-<?php
 // fungsi untuk melakukan koneksi database
 function koneksi()
 {
@@ -193,5 +192,3 @@ function registrasi($data)
 
     return mysqli_affected_rows($conn);
 }
-
-?>

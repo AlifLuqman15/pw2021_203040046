@@ -1,17 +1,16 @@
-<?php 
-    // Alif Luqman Hakim
-    // 203040046
-    // https://github.com/AlifLuqman15/pw2021_203040046
-    // Tugas Praktikum PW
-    // Jumat 10.00-11.00
-?>
-
 <?php
+/*
+Alif Luqman Hakim
+203040046
+Shift Jumat 10.00 - 11.00
+Informatika-B
+*/
+
 session_start();
 
 if (!isset($_SESSION["username"])) {
-    header("Location: login.php");
-    exit;
+  header("Location: login.php");
+  exit;
 }
 
 require 'functions.php';
