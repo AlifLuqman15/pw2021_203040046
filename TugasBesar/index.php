@@ -21,6 +21,7 @@ if (isset($_GET["cari"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <title>Rugby|O</title>
+<link rel="shortcut icon" href="assets/logo/Logo.jpg" type="image/x-icon">
 
 <body id="home" class="scrollspy">
 

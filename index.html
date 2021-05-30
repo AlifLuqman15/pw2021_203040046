@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Index</title>
+  <link rel="shortcut icon" href="./asset/profil/guest.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./asset/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="./asset/css/styli.css">
+</head>
+
+<body>
+  <!-- sliders -->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="./asset/profil/guest.png">
+        <div class="caption center">
+          <h2>Hallo</h2>
+          <h4 class="light grey-text text-lighten-3">Selamat Datang.</h4><br><br>
+          <a href="#banner" class="btn-large waves-effect waves-light orange">Find More</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <section id="banner" class="banner scrollspy">
+    <div class="container"><br>
+      <h1 class="header center white-text">Alif Luqman Hakim</h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">203040046</h5>
+        <img src="./asset/profil/alif.jpg" style="border-radius: 50%;"></a><br><br>
+        <ul class="bci center white-text">
+          <li><a href="https://github.com/AlifLuqman15"><i class="fab fa-github small white-text"></i></a>
+          </li>
+          <li><a href="https://instagram.com/alifluqmn_?utm_medium=copy_link"><i
+                class="fab fa-instagram small white-text"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- kuliah -->
+    <section id="kuliah" class="kuliah scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="center light white-text">Silahkan Masuk</h3>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h5 class="center white-text">Praktikum</h5>
+
+              <div class="row center">
+                <a href="./Praktikum/" class="btn-large waves-effect waves-light orange">Find More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h5 class="center white-text">Kuliah</h5>
+
+              <div class="row center">
+                <a href="./Kuliah/" class="btn-large waves-effect waves-light orange">Find More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h5 class="center white-text">Tugas Besar</h5>
+
+              <div class="row center">
+                <a href="./TugasBesar/" class="btn-large waves-effect waves-light orange">Find More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      </div>
+
+      <div class="copy">
+        <p>Copyright &copy; 2021 AlifLuqman. All Rights Reserved</p>
+      </div>
+
+
+
+
+
+
+      <!--  Scripts-->
+      <script src="https://kit.fontawesome.com/7a30603574.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="./asset/js/materialize.js"></script>
+      <script>const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 900,
+          transition: 600,
+          interval: 4000
+        });
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll, {
+          scrollOffset: 0
+        });
+      </script>
+
+</body>
+
+</html>
